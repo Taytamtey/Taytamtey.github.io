@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
+    background-color: white; /* Changed to white */
+    color: black; /* Dark text for readability */
 }
 
 /* Header */
@@ -17,47 +17,75 @@ header {
 .navbar h1 {
     margin: 0;
     font-size: 2rem;
+    color: white;
 }
 
 .social-links a {
     color: #C3FF83; /* Lime Green */
     margin: 0 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Hero Section */
 .hero h2 {
     font-size: 1.8rem;
     margin-top: 10px;
+    color: white; /* Hero text in white */
 }
 
 /* Services Section */
 #services {
     padding: 40px 20px;
     text-align: center;
+    background-color: #f9f9f9; /* Light grayish background for services */
+}
+
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5910E5; /* Dark Purple */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .service {
-    background-color: #5910E5;
-    margin: 20px;
+    background-color: #5910E5; /* Dark Purple */
     padding: 20px;
     border-radius: 10px;
+    color: white;
+    text-align: center;
 }
 
 .service h3 {
     font-size: 1.5rem;
-    color: #C3FF83;
+    color: #C3FF83; /* Lime Green */
 }
 
 .service p {
     font-size: 1rem;
 }
 
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #C3FF83; /* Lime Green */
+    margin-top: 10px;
+}
+
 /* Contact Form Section */
 #contact {
-    background-color: #333;
+    background-color: #f9f9f9; /* Light background */
     padding: 40px 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 form {
@@ -65,13 +93,20 @@ form {
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 input, select, textarea {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: black;
 }
 
 textarea {
@@ -80,11 +115,12 @@ textarea {
 
 button {
     padding: 10px;
-    background-color: #C3FF83;
+    background-color: #C3FF83; /* Lime Green */
     border: none;
     color: black;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -96,4 +132,5 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #5910E5;
+    color: white;
 }
