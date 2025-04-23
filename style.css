@@ -1,136 +1,124 @@
-/* General Layout */
+ /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white; /* Changed to white */
-    color: black; /* Dark text for readability */
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: white;  /* Light background */
 }
 
-/* Header */
 header {
-    background-color: #5910E5; /* Dark Purple */
-    padding: 20px;
-    text-align: center;
+  background-color: #5910E5; /* Dark Purple */
+  color: white;
+  padding: 40px;
+  text-align: center;
 }
 
-.navbar h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: white;
+header h1 {
+  font-size: 3rem;
 }
 
-.social-links a {
-    color: #C3FF83; /* Lime Green */
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
+header .social-links {
+  margin-top: 20px;
 }
 
-/* Hero Section */
-.hero h2 {
-    font-size: 1.8rem;
-    margin-top: 10px;
-    color: white; /* Hero text in white */
+header .social-links a {
+  color: #C3FF83; /* Lime Green */
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
-/* Services Section */
 #services {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #f9f9f9; /* Light grayish background for services */
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f9f9f9;  /* Lighter background */
 }
 
 #services h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #5910E5; /* Dark Purple */
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .service {
-    background-color: #5910E5; /* Dark Purple */
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;  /* Three columns */
+  margin-bottom: 20px;
 }
 
 .service h3 {
-    font-size: 1.5rem;
-    color: #C3FF83; /* Lime Green */
+  font-size: 2rem;
+  color: #5910E5;
 }
 
 .service p {
-    font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
 .price {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #C3FF83; /* Lime Green */
-    margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #C3FF83;
 }
 
-/* Contact Form Section */
 #contact {
-    background-color: #f9f9f9; /* Light background */
-    padding: 40px 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
 }
 
-input, select, textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    color: black;
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #5910E5;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-textarea {
-    height: 150px;
+form button {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: #5910E5;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-button {
-    padding: 10px;
-    background-color: #C3FF83; /* Lime Green */
-    border: none;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+form button:hover {
+  background-color: #C3FF83;
 }
 
-button:hover {
-    background-color: #A4FF69;
-}
-
-/* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #5910E5;
-    color: white;
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 20px;
 }
+ 
