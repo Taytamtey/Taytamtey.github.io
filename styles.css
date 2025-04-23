@@ -1,128 +1,101 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Layout */
 body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #fff; /* White background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
 }
 
+/* Header */
 header {
-  background-color: #5910E5; /* Dark Purple */
-  color: white;
-  padding: 40px;
-  text-align: center;
+    background-color: #5910E5; /* Dark Purple */
+    padding: 20px;
+    text-align: center;
 }
 
-header h1 {
-  font-size: 3rem;
+.navbar h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
-header .social-links {
-  margin-top: 20px;
+.social-links a {
+    color: #C3FF83; /* Lime Green */
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-header .social-links a {
-  color: #C3FF83; /* Lime Green */
-  margin: 0 15px;
-  text-decoration: none;
-  font-size: 1.2rem;
+/* Hero Section */
+.hero h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
 }
 
+/* Services Section */
 #services {
-  display: flex; /* Use column layout */
-  justify-content: space-between; /* Space out the services evenly */
-  gap: 30px; /* Space between each service */
-  padding: 50px 20px;
-  background-color: #f9f9f9;  /* Lighter background */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-}
-
-#services h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  width: 100%;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .service {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  flex: 1; /* Each service will take equal width */
-  min-width: 250px; /* Prevent shrinking too much */
+    background-color: #5910E5;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .service h3 {
-  font-size: 2rem;
-  color: #5910E5;
+    font-size: 1.5rem;
+    color: #C3FF83;
 }
 
 .service p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
+    font-size: 1rem;
 }
 
-.price {
-  font-size: 1.6rem;  /* Bigger price font */
-  font-weight: bold;
-  color: #C3FF83;  /* Bright lime green */
-  margin-top: 10px;
-}
-
+/* Contact Form Section */
 #contact {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+    background-color: #333;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 form {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-form input, form textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  border: 2px solid #5910E5;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  color: #333;
+input, select, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
-form button {
-  padding: 15px;
-  width: 100%;
-  border: none;
-  background-color: #5910E5;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  border-radius: 5px;
+textarea {
+    height: 150px;
 }
 
-form button:hover {
-  background-color: #C3FF83;
+button {
+    padding: 10px;
+    background-color: #C3FF83;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #A4FF69;
+}
+
+/* Footer */
 footer {
-  background-color: #f1f1f1;
-  color: #333;
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #5910E5;
 }
 
 
