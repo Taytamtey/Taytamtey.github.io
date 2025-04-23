@@ -34,7 +34,7 @@ header .social-links a {
 }
 
 #services {
-  display: flex; /* Use flexbox for side-by-side layout */
+  display: flex; /* Use side-by-side layout */
   justify-content: space-between; /* Space out the services evenly */
   gap: 30px; /* Space between each service */
   padding: 50px 20px;
