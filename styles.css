@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: white;
+}
+
+header, nav {
+  background-color: #5910E5;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #C3FF83;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.hero h1 {
+  font-size: 2em;
+  color: #C3FF83;
+}
+
+.services {
+  padding: 40px 20px;
+}
+
+.service {
+  border: 1px solid #C3FF83;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #222;
+}
+
+.service h2 {
+  color: #C3FF83;
+}
+
+.contact {
+  background-color: #5910E5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, select, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  background-color: #C3FF83;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  background-color: #111;
+  color: #aaa;
+}
