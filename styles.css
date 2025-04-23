@@ -27,7 +27,7 @@ header .social-links {
 }
 
 header .social-links a {
-  color: #C3FF83; /* Lime Green */
+  color: #C3FF83; /*white */
   margin: 0 15px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -69,7 +69,7 @@ header .social-links a {
 .price {
   font-size: 1.6rem;  /* Bigger price font */
   font-weight: bold;
-  color: #C3FF83;  /* Bright lime green */
+  color: #C3FF83;  /* white */
   margin-top: 10px;
 }
 
