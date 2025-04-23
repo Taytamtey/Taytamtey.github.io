@@ -7,13 +7,13 @@
 
 body {
   font-family: Arial, sans-serif;
-  color: white;
+  color: Black;
   background-color: #1a1a1a;
 }
 
 header {
   background-color: #5910E5; /* Dark Purple */
-  color: white;
+  color: Black;
   padding: 40px;
   text-align: center;
 }
@@ -27,7 +27,7 @@ header .social-links {
 }
 
 header .social-links a {
-  color: #C3FF83; /* Lime Green */
+  color: #C3FF83; /* white */
   margin: 0 15px;
   text-decoration: none;
   font-size: 1.2rem;
