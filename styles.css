@@ -1,82 +1,101 @@
-body {
+/* General Reset */
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #000;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
   color: white;
-}
-
-header, nav {
-  background-color: #5910E5;
-  padding: 20px;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #C3FF83;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.hero {
-  padding: 60px 20px;
-  text-align: center;
   background-color: #1a1a1a;
 }
 
-.hero h1 {
-  font-size: 2em;
-  color: #C3FF83;
+header {
+  background-color: #5910E5; /* Dark Purple */
+  color: white;
+  padding: 40px;
+  text-align: center;
 }
 
-.services {
-  padding: 40px 20px;
+header h1 {
+  font-size: 3rem;
+}
+
+header .social-links {
+  margin-top: 20px;
+}
+
+header .social-links a {
+  color: #C3FF83; /* Lime Green */
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#services {
+  padding: 50px 20px;
+  background-color: #2c2c2c;
+}
+
+#services h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .service {
-  border: 1px solid #C3FF83;
-  border-radius: 10px;
+  text-align: center;
   margin-bottom: 30px;
-  padding: 20px;
-  background-color: #222;
 }
 
-.service h2 {
+.service h3 {
+  font-size: 2rem;
   color: #C3FF83;
 }
 
-.contact {
-  background-color: #5910E5;
-  padding: 40px 20px;
+.service p {
+  font-size: 1.1rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #C3FF83;
+}
+
+#contact {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
   text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: auto;
-}
-
-input, select, textarea {
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
   margin: 10px 0;
-  padding: 10px;
+  border: 2px solid #5910E5;
   border-radius: 5px;
-  border: none;
-  font-size: 1em;
+  background-color: #333;
+  color: white;
 }
 
-input[type="submit"] {
-  background-color: #C3FF83;
-  color: #000;
+form button {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: #5910E5;
+  color: white;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #C3FF83;
 }
 
 footer {
-  padding: 20px;
+  background-color: #2c2c2c;
+  color: white;
   text-align: center;
-  font-size: 0.9em;
-  background-color: #111;
-  color: #aaa;
+  padding: 20px;
 }
