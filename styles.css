@@ -27,18 +27,19 @@ header .social-links {
 }
 
 header .social-links a {
-  color: #C3FF83; /*white */
+  color: #C3FF83; /* Lime Green */
   margin: 0 15px;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 #services {
-  display: grid; /* Grid layout for 3 columns */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexibly fit 3 columns */
-  gap: 30px;
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between; /* Space out the services evenly */
+  gap: 30px; /* Space between each service */
   padding: 50px 20px;
   background-color: #f9f9f9;  /* Lighter background */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 #services h2 {
@@ -54,6 +55,8 @@ header .social-links a {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  flex: 1; /* Each service will take equal width */
+  min-width: 250px; /* Prevent shrinking too much */
 }
 
 .service h3 {
@@ -69,7 +72,7 @@ header .social-links a {
 .price {
   font-size: 1.6rem;  /* Bigger price font */
   font-weight: bold;
-  color: #C3FF83;  /* white */
+  color: #C3FF83;  /* Bright lime green */
   margin-top: 10px;
 }
 
@@ -96,7 +99,7 @@ form input, form textarea {
   margin: 10px 0;
   border: 2px solid #5910E5;
   border-radius: 5px;
-  background-color: white;
+  background-color: #f9f9f9;
   color: #333;
 }
 
@@ -104,7 +107,7 @@ form button {
   padding: 15px;
   width: 100%;
   border: none;
-  background-color: ;white
+  background-color: #5910E5;
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
@@ -121,3 +124,4 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
