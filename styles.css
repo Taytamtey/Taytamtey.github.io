@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: white;  /* Light background */
+  background-color: #fff; /* White background */
 }
 
 header {
@@ -34,10 +34,12 @@ header .social-links a {
 }
 
 #services {
-  display: flex;
-  justify-content: space-around;
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between; /* Space out the services evenly */
+  gap: 30px; /* Space between each service */
   padding: 50px 20px;
   background-color: #f9f9f9;  /* Lighter background */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 #services h2 {
@@ -53,8 +55,8 @@ header .social-links a {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 30%;  /* Three columns */
-  margin-bottom: 20px;
+  flex: 1; /* Each service will take equal width */
+  min-width: 250px; /* Prevent shrinking too much */
 }
 
 .service h3 {
@@ -68,9 +70,10 @@ header .social-links a {
 }
 
 .price {
-  font-size: 1.4rem;
+  font-size: 1.6rem;  /* Bigger price font */
   font-weight: bold;
-  color: #C3FF83;
+  color: #C3FF83;  /* Bright lime green */
+  margin-top: 10px;
 }
 
 #contact {
@@ -121,4 +124,5 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
 
