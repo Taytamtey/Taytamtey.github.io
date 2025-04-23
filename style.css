@@ -1,4 +1,4 @@
- /* General Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: white;  /* Light background */
+  background-color: #fff; /* White background */
 }
 
 header {
@@ -34,8 +34,9 @@ header .social-links a {
 }
 
 #services {
-  display: flex;
-  justify-content: space-around;
+  display: grid; /* Grid layout for 3 columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexibly fit 3 columns */
+  gap: 30px;
   padding: 50px 20px;
   background-color: #f9f9f9;  /* Lighter background */
 }
@@ -53,8 +54,6 @@ header .social-links a {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 30%;  /* Three columns */
-  margin-bottom: 20px;
 }
 
 .service h3 {
@@ -68,9 +67,10 @@ header .social-links a {
 }
 
 .price {
-  font-size: 1.4rem;
+  font-size: 1.6rem;  /* Bigger price font */
   font-weight: bold;
-  color: #C3FF83;
+  color: #C3FF83;  /* Bright lime green */
+  margin-top: 10px;
 }
 
 #contact {
@@ -121,4 +121,3 @@ footer {
   text-align: center;
   padding: 20px;
 }
- 
